@@ -1,0 +1,15 @@
+.select-container {
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    min-width: 100px;
+    color: #2a6793;
+    background-color: #98cef8;
+}
+
+.option {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+}

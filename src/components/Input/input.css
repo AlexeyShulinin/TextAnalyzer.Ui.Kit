@@ -1,0 +1,23 @@
+.input {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.input-text {
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 4px 6px;
+}
+
+input[type="file"]::file-selector-button {
+    border-radius: 6px;
+    padding: 6px 16px;
+    cursor: pointer;
+    margin-right: 16px;
+    color: #446f93;
+    background-color: #bcd0dd;
+    border-color: #446f93;
+}
+input[type="file"]::file-selector-button:hover {
+    background-color: #9ab8ef;
+}
