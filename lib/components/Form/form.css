@@ -1,0 +1,16 @@
+.form-container {
+    padding: 10px 14px;
+    background-color: #d7c9fb;
+    border-radius: 12px;
+    min-width: 500px;
+    min-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.header {
+    border-bottom: 2px solid;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    text-align: center;
+    min-height: 40px;
+}

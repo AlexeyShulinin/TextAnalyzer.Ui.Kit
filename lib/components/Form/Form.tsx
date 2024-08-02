@@ -4,13 +4,15 @@ import './form.css';
 
 export const Form = ({ onSubmit, label, children, ...props }: IFormProps) => {
     return (
-        <form onSubmit={onSubmit} {...props} className="form-container">
-            <div>
-                <div>
+        <div className="form-container">
+            <header>
+                <h2 className="header">
                     <Label text={label} />
-                </div>
+                </h2>
+            </header>
+            <form onSubmit={onSubmit} {...props}>
                 <div>{children}</div>
-            </div>
-        </form>
+            </form>
+        </div>
     );
 };

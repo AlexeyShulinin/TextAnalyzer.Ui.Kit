@@ -1,4 +1,8 @@
 .text-area {
+    box-sizing: border-box;
+    min-width: 500px;
+    min-height: 50px;
+    width: 100%;
     padding: 10px 12px;
     border-radius: 8px;
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;

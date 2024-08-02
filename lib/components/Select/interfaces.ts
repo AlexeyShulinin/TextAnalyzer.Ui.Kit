@@ -1,5 +1,5 @@
-import { IBaseItem } from '../../common/interfaces.ts';
 import { ChangeEvent } from 'react';
+import { IBaseItem } from '../../common/interfaces.ts';
 
 export interface ISelectProps {
     options: IBaseItem[];
