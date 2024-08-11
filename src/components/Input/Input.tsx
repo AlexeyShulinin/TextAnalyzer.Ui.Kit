@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { ChangeEventHandler, JSX } from 'react';
 
 interface IInputProps {
-    value: string;
+    value?: string | number;
     onChange?: ChangeEventHandler<HTMLInputElement>;
     type?: 'text' | 'file';
     disabled?: boolean;
