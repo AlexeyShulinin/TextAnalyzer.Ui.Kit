@@ -1,6 +1,15 @@
-import { IButtonProps } from './interfaces.ts';
-import './button.css';
+import './Button.css';
 import { Label } from '../Label/Label.tsx';
+import { JSX } from 'react';
+
+interface IButtonProps {
+    label: string;
+    onClick?: () => void;
+    disabled?: boolean;
+    variant?: 'primary' | 'secondary';
+    size?: 'small' | 'large';
+    type?: 'button' | 'submit';
+}
 
 export const Button = ({
     label,
@@ -8,7 +17,7 @@ export const Button = ({
     size,
     disabled = false,
     ...props
-}: IButtonProps) => {
+}: IButtonProps): JSX.Element => {
     return (
         <button
             disabled={disabled}

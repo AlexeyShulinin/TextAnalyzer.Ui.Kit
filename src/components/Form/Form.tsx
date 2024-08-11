@@ -1,8 +1,19 @@
-import { IFormProps } from './interfaces.ts';
 import { Label } from '../Label/Label.tsx';
-import './form.css';
+import './Form.css';
+import { JSX } from 'react';
 
-export const Form = ({ onSubmit, label, children, ...props }: IFormProps) => {
+interface IFormProps {
+    onSubmit: React.FormEventHandler<HTMLFormElement>;
+    label: string;
+    children: React.ReactNode;
+}
+
+export const Form = ({
+    onSubmit,
+    label,
+    children,
+    ...props
+}: IFormProps): JSX.Element => {
     return (
         <div className="form-container">
             <header>

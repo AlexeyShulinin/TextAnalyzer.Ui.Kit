@@ -5,4 +5,4 @@ export { Label } from './components/Label/Label';
 export { Select } from './components/Select/Select';
 export { TextArea } from './components/TextArea/TextArea';
 
-export type { IBaseItem } from './common/interfaces.ts';
+export type { IBaseItem } from './common/index.ts';

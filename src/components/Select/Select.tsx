@@ -1,12 +1,19 @@
-import { ISelectProps } from './interfaces.ts';
-import './select.css';
+import './Select.css';
+import { IBaseItem } from '../../common/IBaseItem.ts';
+import { ChangeEvent, JSX } from 'react';
+
+interface ISelectProps {
+    options: IBaseItem[];
+    value: number;
+    onChange: (event: ChangeEvent<HTMLSelectElement>) => void;
+}
 
 export const Select = ({
     options,
     value,
     onChange,
     ...props
-}: ISelectProps) => {
+}: ISelectProps): JSX.Element => {
     return (
         <select
             value={value}
