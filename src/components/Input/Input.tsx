@@ -1,10 +1,10 @@
 import './Input.css';
 import classNames from 'classnames';
-import { FormEvent, JSX } from 'react';
+import { ChangeEventHandler, JSX } from 'react';
 
 interface IInputProps {
     value: string;
-    onChange?: (event: FormEvent<HTMLInputElement>) => void;
+    onChange?: ChangeEventHandler<HTMLInputElement>;
     type?: 'text' | 'file';
     disabled?: boolean;
     placeholder?: string;
